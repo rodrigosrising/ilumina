@@ -1,0 +1,44 @@
+/*
+Theme Name: Clínica Ilumina
+Author: Rodrigo Garcia
+Author URI: https://www.blackflag.com.br
+Description: A theme description
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+/* -----------------------------------------
+	Table of Contents
+--------------------------------------------
+
+.. 01. General
+.. 02. Header
+.. 03. Menus
+.. 04. Footer
+.. 05. Slides
+.. 06. Main
+.. 07. WordPress defaults
+.. 08. Utilities
+*/
+
+// VARIAVEIS
+@import 'sass/variaveis';
+// ADDS
+@import 'sass/foundation_adds';
+// DEFAULT
+@import 'sass/default';
+// HEADER
+@import 'sass/header';
+// MENUS
+@import 'sass/menu';
+// SLIDER
+@import 'sass/slides';
+// MAIN CONTENT
+@import 'sass/main';
+// ESPECIALIZACAO
+@import 'sass/especializacao';
+// BLOG
+@import 'sass/blog';
+// FOOTER
+@import 'sass/footer';

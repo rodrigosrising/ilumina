@@ -1,0 +1,91 @@
+/*FOOTER*/
+.footer {
+  padding: 3rem 0 0;
+  background-image: linear-gradient(to bottom, $cor3, $cor4);
+  position: relative;
+  z-index: 10;
+
+  .footer-menu {
+    margin-bottom: 1rem;
+
+    a {
+      padding: 0.2rem 0;
+      font-size: 1.1rem;
+    }
+  }
+
+  .custom-footer-logo-wrapper {
+    position: relative;
+    display: block;
+    width: 126px;
+    padding: 1.5rem 0;
+    text-align: center;
+    margin: 4rem auto 0;
+
+    .logo-footer {
+      position: relative;
+      z-index: 10000;
+      top: -2rem;
+    }
+  }
+
+  .custom-footer-logo-wrapper::before {
+    content: '';
+    background: url("./assets/img/fundo-logo-footer.png") no-repeat 0 0;
+    height: 243px;
+    width: 615px;
+    position: absolute;
+    bottom: 0;
+    left: -180px;
+    opacity: 1;
+  }
+}
+
+.footer-info {
+  p {
+    font-size: 1rem;
+    margin-bottom: 0;
+    line-height: 1.5rem;
+  }
+
+  address {
+    font-style: normal;
+  }
+}
+/* Small only */
+@media screen and (max-width: 39.9375em) {
+  .footer {
+    .custom-footer-logo-wrapper {
+      margin: 6rem auto 0;
+    }
+  }
+}
+/* Medium and up */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  .footer {
+    .custom-footer-logo-wrapper {
+      margin: 6rem auto 0;
+    }
+  }
+}
+
+.social-buttons{
+  a{
+    background: $cor;
+    color: $cor2;
+    @extend %transition;
+    &:hover{
+      color: $cor1;
+    }
+  }
+}
+
+/* Large and up */
+@media screen and (min-width: 64em) {
+  .fixed{
+    position: fixed;
+    bottom: 0;
+    z-index:1000;
+    width: 100%;
+  }
+}

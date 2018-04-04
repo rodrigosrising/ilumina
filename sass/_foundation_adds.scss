@@ -1,0 +1,124 @@
+.shadow {
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+.bordered {
+    border: 0.0625rem solid #cacaca;
+}
+.radius {
+    border-radius: 0.5rem;
+}
+.rounded {
+    border-radius: 5000px !important;
+}
+
+/*SEPARATOR*/
+.separator-left {
+    text-align: left !important;
+}
+.separator-left::before, .separator-left::after {
+    display: table;
+    content: ' ';
+    -webkit-flex-basis: 0;
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1;
+}
+.separator-left::after {
+    position: relative !important;
+    width: 3rem;
+    border-bottom: 0.125rem solid #1779ba;
+    margin: 1rem auto 0;
+    margin-left: 0 !important;
+}
+.separator-left::after {
+    clear: both;
+}
+
+.separator-center {
+    text-align: center !important;
+}
+.separator-center::before, .separator-center::after {
+    display: table;
+    content: ' ';
+    -webkit-flex-basis: 0;
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1;
+}
+.separator-center::after {
+    position: relative !important;
+    width: 3rem;
+    border-bottom: 0.125rem solid #1779ba;
+    margin: 1rem auto 0;
+}
+.separator-center::after {
+    clear: both;
+}
+
+.separator-right {
+    text-align: right !important;
+}
+.separator-right::before, .separator-right::after {
+    display: table;
+    content: ' ';
+    -webkit-flex-basis: 0;
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1;
+}
+.separator-right::after {
+    position: relative !important;
+    width: 3rem;
+    border-bottom: 0.125rem solid #1779ba;
+    margin: 1rem auto 0;
+    margin-right: 0 !important;
+}
+.separator-right::after {
+    clear: both;
+}
+
+/*FONT STYLING*/
+.font-wide {
+    letter-spacing: 0.25rem;
+}
+.font-normal {
+    font-weight: normal;
+}
+.font-bold {
+    font-weight: bold;
+}
+.font-italic {
+    font-style: italic !important;
+}
+
+/*TEXT TRANSFORMATION*/
+.text-uppercase {
+    text-transform: uppercase !important;
+}
+.text-lowercase {
+    text-transform: lowercase !important;
+}
+.text-capitalize {
+    text-transform: capitalize !important;
+}
+
+/*TEXT DECORATION*/
+.text-underline {
+    text-decoration: underline !important;
+}
+.text-overline {
+    text-decoration: overline !important;
+}
+.text-line-through {
+    text-decoration: line-through !important;
+}

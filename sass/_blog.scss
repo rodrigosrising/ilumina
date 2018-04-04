@@ -1,0 +1,174 @@
+/*BLOG*/
+.blog-post-list{
+	margin-bottom: 30px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid $border-color;
+	img{
+		margin-bottom: 1rem;
+	}
+	h2 {
+		font-size: 2.2rem;
+		color: $cor3;
+		line-height: 2.5rem;
+		margin-bottom: 1rem;
+		a{
+			color: $cor4;
+			&:hover{
+				color: $cor3;
+			}
+		}
+	}
+	.entry-meta{
+		border-top: 1px dotted $border-color;
+		border-bottom: 1px dotted $border-color;
+		margin-bottom: 1rem;
+		margin-top: 0rem;
+		padding: 0.2rem 0.5rem;
+		P{
+			margin: 0;
+		}
+		i{
+			margin-top: 0.4rem;
+		}
+	}
+	.tag-list{
+		margin-top: 14px;
+		p{
+			a.button{
+				margin: 1px;
+				padding: 3px 5px;
+				color: $cor;
+				border-bottom: none;
+			}
+		}
+		i{
+			margin-right: 0.3rem;
+		}
+	}
+}
+.blog-post-list{
+	h1{
+		color: $cor1;
+		font-size: 2.4rem;
+	}
+	h2{
+		color: $cor1;
+	}
+	.post-content{
+		h1, h2, h3, h4, h5, h6{
+			font-family: $openSans;
+		}
+		p{
+			a{
+				font-weight: bold;
+				color: $cor2;
+				border-bottom: 1px dashed $cor3;
+				&:hover{
+					border-bottom: 1px dashed $cor1;
+				}
+			}
+		}
+	}
+
+}
+.widget-sidebar{
+	width: 100%;
+	margin: 0 0 1rem;
+	padding: 15px 0 0;
+	border-bottom: 1px solid $border-color;
+	background: $cor;
+	color: $cor1;
+	h3{
+		text-transform: uppercase;
+		text-align: left;
+		color: $cor2;
+		font-size: 1.4rem;
+	}
+	ul{
+		padding: 0 10px;
+		margin-left: 0.5rem;
+		margin-bottom: 0;
+		li{
+			padding: 5px 5px 5px 0;
+			border-bottom: 1px dashed $border-color;
+			list-style: square;
+			display: list-item;
+			a{
+				color: $cor1;
+				&:hover{
+					color: $cor2;
+				}
+			}
+			&:last-child{
+				border-bottom: none;
+			}
+		}
+	}
+	button[type='submit']{
+		border: 1px solid $cor2;
+		&:hover{
+			border: 1px solid $cor1;
+		}
+	}
+}
+.pagination .current, .pagination .current:hover{
+	background: $cor2;
+	color: $cor;
+}
+
+// SHARE BUTTONS
+p{
+	.share-info{
+	margin-bottom: 0;
+	}
+}
+.share-buttons{
+	.has-tip{
+	border: none;
+	}
+	a{
+	border: none;
+	width: 33px;
+	height: 33px;
+		i{
+		font-size: 1.4rem;
+		line-height: 2.2rem;
+		}
+	}
+	a.button{
+	padding: 0;
+	margin-right: 3px!important;
+	color: #FFF;
+	@extend %transition;
+	}
+	a.button.facebook{
+	background: rgb(59, 89, 152);
+		&:hover{
+			background: $cor1;
+		}
+	}
+	a.button.twitter{
+	background: rgb(29, 161, 242);
+		&:hover{
+			background: $cor1;
+		}
+	}
+	a.button.linkedin{
+	background: rgb(0, 119, 181);
+		&:hover{
+			background: $cor1;
+		}
+	}
+	a.button.google-plus{
+	background: rgb(220, 78, 65);
+		&:hover{
+			background: $cor1;
+		}
+	}
+	a.button.whatsapp{
+	background: rgb(77, 194, 71);
+		&:hover{
+			background: $cor1;
+		}
+	}
+}

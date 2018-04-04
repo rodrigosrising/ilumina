@@ -1,0 +1,11 @@
+.especializacao{
+  border-bottom: 1px solid $border-color;
+  padding: 1rem 0;
+ h3{
+   font-family: $openSans;
+   color: lighten($cor1, 0%);
+ }
+ &:nth-child(even){
+   background: $cor5;
+ }
+}

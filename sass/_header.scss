@@ -1,0 +1,83 @@
+/*HEADER*/
+.sticky-header {
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0);
+  @extend %transition;
+  border-bottom: 1px solid transparent;
+}
+
+.is-stuck {
+  .header {
+    background: rgba(255, 255, 255, 1);
+    overflow: hidden;
+    border-bottom: 1px solid #f1f1f1;
+  }
+
+  .menu-icon:after {
+    background: #0a0a0a;
+    box-shadow: 0 7px 0 #0a0a0a, 0 14px 0 #0a0a0a;
+  }
+}
+/*LOGO*/
+.custom-logo-wrapper {
+  position: relative;
+  display: inline-block;
+  width: auto;
+  padding: 1.5rem 0;
+  @extend %transition;
+
+  .custom-logo-link {
+    display: block;
+
+    .custom-logo {
+      position: relative;
+      z-index: 1111;
+    }
+  }
+  &::before {
+    content: '';
+    background: url("./assets/img/fundo-logo-top.png") no-repeat 0 0;
+    height: 512px;
+    width: 1153px;
+    position: absolute;
+    top: 0;
+    right: -100px;
+    opacity: 1;
+    @extend %transition;
+  }
+}
+.hide-background{
+  &::before {
+    content: '';
+    display: none;
+  }
+}
+.custom-logo {
+  width: 100%;
+  @extend %transition;
+}
+
+.is-stuck {
+  .custom-logo-wrapper {
+    padding: 0.7rem 0;
+
+    .custom-logo {
+      width: 84%;
+    }
+  }
+
+  .custom-logo-wrapper{
+    &::before {
+      opacity: 0;
+    }
+  }
+}

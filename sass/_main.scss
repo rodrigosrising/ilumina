@@ -1,0 +1,81 @@
+.main {
+  background: $cor;
+  position: relative;
+  z-index: 100;
+}
+/*SECTIONS*/
+.custom-section {
+  padding: 3rem 0;
+}
+/*PROFISSIONAIS HOME*/
+.profissional {
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  margin: 1rem 0;
+
+  .image-container {
+    position: relative;
+    background-image: linear-gradient(to bottom, $cor3, $cor4);
+
+    > img {
+      opacity: 0.8;
+    }
+
+    > .image-cover {
+      position: absolute;
+      background-image: linear-gradient(to bottom, transparent 60%, $cor4 90%);
+      height: 100%;
+      width: 100%;
+      z-index: 1;
+    }
+
+    > .nome-container {
+      background: $cor;
+      position: absolute;
+      bottom: 15px;
+      left: 50%;
+      -webkit-transform: translate(-50%, 50%);
+      -moz-transform: translate(-50%, 50%);
+      -o-transform: translate(-50%, 50%);
+      transform: translate(-50%, 50%);
+      width: calc(100% - 1.8rem);
+      padding: 0.3rem 0.9375rem;
+      z-index: 1;
+      -webkit-border-radius: 10px 10px 0 0;
+      border-radius: 10px 10px 0 0;
+
+      h4 {
+        font-size: 1.1rem;
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+
+  .card-section {
+    padding: 1rem 2rem 3rem;
+  }
+
+  p {
+    font-size: 80%;
+  }
+}
+/*BLOG-HOME*/
+.blog-home {
+  margin: 2rem 0;
+
+  img {
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+    margin-bottom: 1rem;
+  }
+
+  h5 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    line-height: 1.1rem;
+  }
+}

@@ -1,0 +1,86 @@
+/*OFFCANVAS MENU*/
+.off-canvas {
+  background: darken($cor1, 5%);
+  z-index: 10000 !important;
+}
+.js-off-canvas-overlay{
+  background: rgba(0, 0, 0, 0.15);
+  z-index: 9999;
+}
+.off-canvas-menu {
+  background: $cor1;
+  li a {
+    color: $cor;
+    white-space: normal;
+    border-bottom: 1px solid darken($cor1, 5%);
+    border-top: 1px solid lighten($cor1, 5%);
+  }
+
+  .active > a,
+  .is-active > a,
+  a:focus,
+  a:hover {
+    color: $cor;
+    background: lighten($cor1, 5%);
+  }
+
+  .submenu-toggle {
+    background: #1b327f;
+    &::after {
+      border-color: $cor transparent transparent;
+    }
+  }
+}
+/*MENU*/
+.main-menu {
+  a {
+    position: relative;
+    display: inline-block;
+    &:after {
+      position: absolute;
+      left: 50%;
+      content: '';
+      height: 1px;
+      background: $cor1;
+      transition: all 0.6s linear;
+      width: 0;
+      bottom: 8px;
+    }
+    &:before {
+      position: absolute;
+      left: 50%;
+      content: '';
+      height: 1px;
+      background: $cor2;
+      transition: all 0.5s linear;
+      width: 0;
+      bottom: 8px;
+    }
+  }
+
+  .active > a:after,
+  .active > a:before,
+  a:hover::after,
+  a:hover::before {
+    width: calc(100% - 2rem);
+    left: calc(0px + 1rem);
+  }
+
+  .active > a {
+    background: none;
+    color: $cor1;
+  }
+}
+
+.off-canvas{
+  .logo-off-canvas{
+    background: $cor;
+    padding: 1rem;
+    a.custom-logo-link{
+      display: block;
+      img.custom-logo{
+        width: auto;
+      }
+    }
+  }
+}
